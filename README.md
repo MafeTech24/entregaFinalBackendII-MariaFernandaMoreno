@@ -161,11 +161,11 @@ src/
   views/
 ````
 
-✔ DAO → Acceso a datos
-✔ Services → Lógica de negocio
-✔ Controllers → Entradas HTTP
-✔ DTOs → Limpieza de datos
-✔ Middlewares → Autorización y autenticación
+-  DAO → Acceso a datos
+- Services → Lógica de negocio
+- Controllers → Entradas HTTP
+- DTOs → Limpieza de datos
+- Middlewares → Autorización y autenticación
 
 ---
 ### 👤 Roles
