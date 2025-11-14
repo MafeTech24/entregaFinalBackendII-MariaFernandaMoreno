@@ -2,6 +2,7 @@ const express = require("express");
 const CartManager = require("../dao/mongo/cart.dao");
 const passport = require("passport");
 const { authorization } = require("../middlewares/authorization");
+const { purchaseCartController } = require("../controllers/purchase.controller");
 
 const router = express.Router();
 
@@ -165,6 +166,14 @@ router.delete(
       res.status(500).json({ error: error.message });
     }
   }
+);
+
+/* Comprar carrito (solo user) */
+router.post(
+  "/:cid/purchase",
+  passport.authenticate("jwt", { session: false }),
+  authorization("user"),
+  purchaseCartController
 );
 
 module.exports = router;
