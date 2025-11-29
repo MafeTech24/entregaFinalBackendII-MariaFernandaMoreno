@@ -187,26 +187,5 @@ src/
 
 ---
 
-### 🔐 ACCESOS PARA EL PROFESOR
-
-ADMIN
-``
-Email: admin2@coder.com
-Password: admin123
-``
-
-USUARIO DE PRUEBA
-``
-Email: user@correo.com
-Password: 1234
-``
-
-CONEXIÓN A MONGODB
-````
-MONGO_URL=mongodb+srv://testform:codercoder@cluster0.8aqow9p.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
-DB_NAME=productosDB
-JWT_SECRET=claveultrasecreta
-JWT_RESET_SECRET=clave_reset_super_secreta
-JWT_COOKIE_NAME=jwtCoderToken
 
 
